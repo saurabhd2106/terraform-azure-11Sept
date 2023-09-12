@@ -38,3 +38,9 @@ variable "nicName" {
 variable "nsgname" {
   type = string
 }
+
+variable "inbound_ports" {
+
+  type = any
+
+}
