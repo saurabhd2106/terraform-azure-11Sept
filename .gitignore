@@ -1,1 +1,6 @@
 resource-group/.terraform/
+resource-group/terraform.tfstate
+resource-group/terraform.tfstate.backup
+storage-blob/.terraform
+storage-blob/terraform.tfstate
+storage-blob/terraform.tfstate.backup

@@ -1,3 +1,3 @@
-rg-name = "saurabh-rg"
+rg-name  = "saurabh-rg"
 location = "West Europe"
-envName = "test"
+envName  = "test"

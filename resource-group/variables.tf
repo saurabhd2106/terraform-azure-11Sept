@@ -1,22 +1,22 @@
 variable "rg-name" {
 
-    type = string
+  type = string
 
-    description = "Resource group name"
-  
+  description = "Resource group name"
+
 }
 
 variable "location" {
 
-    type = string
+  type = string
 
-    default = "West Europe"
-  
+  default = "West Europe"
+
 }
 
 variable "envName" {
 
-    type = string
+  type = string
 
-  
+
 }
