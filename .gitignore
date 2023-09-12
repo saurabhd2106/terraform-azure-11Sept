@@ -1,6 +1,10 @@
 resource-group/.terraform/
 resource-group/terraform.tfstate
 resource-group/terraform.tfstate.backup
-storage-blob/.terraform
+storage-blob/.terraform/
 storage-blob/terraform.tfstate
 storage-blob/terraform.tfstate.backup
+terraform-vm-module/vm1/.terraform/
+terraform-vm-module/vm1/terraform.tfstate
+terraform-vm-module/vm2/.terraform/
+terraform-vm-module/vm2/terraform.tfstate
