@@ -20,3 +20,11 @@ variable "envName" {
 
 
 }
+
+variable "rg-names" {
+
+  type = list(string)
+
+  default = [  "my-rg-2", "my-rg-3" ]
+
+}

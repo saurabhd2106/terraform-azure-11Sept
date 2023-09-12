@@ -31,5 +31,32 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
     storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
   }
 
+  provisioner "local-exec" {
+
+    on_failure = continue
+
+     command = "echo ${self.private_ip_address} >> private_ips.txt"
+
+  }
+
+  provisioner "remote-exec" {
+
+    on_failure = continue
+
+    inline = [
+      "sudo apt-get update",
+      "sudo apt-get install -y nginx",
+      "sudo service nginx start"
+    ]
+
+   connection {
+    type     = "ssh"
+    user     = "azureuser"
+    password = file("/home/nobleprog/Downloads/fabio.pem")
+    host     = self.public_ip_address
+  }
+    
+  }
+
   tags = var.tags
 }
